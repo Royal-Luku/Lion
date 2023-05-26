@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/Tamilan_BotsZ')
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
             ],
             [
-                InlineKeyboardButton('ℹ️ ʜᴇʟᴘ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,15 +44,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/Tamilan_BotsZ'),
-            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+qswNBTRWlv9lNjQ1'),
+            InlineKeyboardButton('🌿 ʙᴀᴄᴋᴜᴘ ᴄʜ 🌿', url='https://t.me/Tamilan_BotsZ'),
+            InlineKeyboardButton('🥀 ᴍᴏᴠɪᴇs ᴄʜ 🥀', url='https://t.me/+qswNBTRWlv9lNjQ1'),
             ],[
-            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/TamilanBotsZ_Support'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://GitHub.Com/TamilanBotsZ/AwesomeFilterPro'),
+            InlineKeyboardButton('💫 sᴜᴘᴘᴏʀᴛ ɢʀᴘ 💫', url='https://t.me/TamilanBotsZ_Support'),
+            InlineKeyboardButton('🐣 ᴅᴇᴠ 🐣', url='https://GitHub.Com/TamilanBotsZ/AwesomeFilterPro'),
             ],[
-            InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
+            InlineKeyboardButton('☘️ ᴀʙᴏᴜᴛ ☘️', callback_data='about'),
             ],[
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')
+            InlineKeyboardButton('🎗 ᴄʟᴏsᴇ 🎗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -71,7 +71,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🤖", url=invite_link.invite_link
+                    "🍿 Updated Channel 🍿", url=invite_link.invite_link
                 )
             ]
         ]
@@ -94,15 +94,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/Tamilan_BotsZ'),
-            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+qswNBTRWlv9lNjQ1'),
+            InlineKeyboardButton('🌿 ʙᴀᴄᴋᴜᴘ ᴄʜ 🌿', url='https://t.me/Tamilan_BotsZ'),
+            InlineKeyboardButton('🥀 ᴍᴏᴠɪᴇs ᴄʜ 🥀', url='https://t.me/+qswNBTRWlv9lNjQ1'),
             ],[
-            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/TamilanBotsZ_Support'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://GitHub.Com/TamilanBotsZ/AwesomeFilterPro'),
+            InlineKeyboardButton('💫 sᴜᴘᴘᴏʀᴛ ɢʀᴘ 💫', url='https://t.me/TamilanBotsZ_Support'),
+            InlineKeyboardButton('🐣 ᴅᴇᴠ 🐣', url='https://GitHub.Com/TamilanBotsZ/AwesomeFilterPro'),
             ],[
-            InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
+            InlineKeyboardButton('☘️ ᴀʙᴏᴜᴛ ☘️', callback_data='about'),
             ],[
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')
+            InlineKeyboardButton('🎗 ᴄʟᴏsᴇ 🎗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
