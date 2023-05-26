@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '13556430'))
 API_HASH = environ.get('API_HASH', '3531771c0d58b9ffc44d12f38c5edbf5')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6220127432:AAF3YtwGHWOODpl-d1Fww0kh7cQGoNK3_QQ')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 120))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
@@ -48,7 +48,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001971789093')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
@@ -63,7 +63,7 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
-UPSTREAM_REPO = environ.get('UPSTREAM_REPO', 'https://github.com/TamilanBotsZ/AwesomeFilterPro')
+UPSTREAM_REPO = environ.get('UPSTREAM_REPO', 'https://github.com/Royaldeep1/Lion')
 
 AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 120))
 AUTO_DELETE = environ.get('AUTO_DELETE', True)
